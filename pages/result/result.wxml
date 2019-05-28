@@ -1,0 +1,45 @@
+<view class="swiper-container">
+
+	<!-- loading -->
+	<block wx:if="{{showLoading}}">
+		<view class="donut-container">
+			<view class="donut"></view>
+		</view>
+	</block>
+
+
+	<!-- book swiper -->
+	<block wx:else>
+		<swiper 
+			indicator-dots="{{indicatorDots}}" 
+			autoplay="{{autoplay}}" 
+			interval="{{interval}}" 
+			duration="{{duration}}" 
+			circular="{{circular}}" 
+			class="swiper" 
+			previous-margin="{{sideMargin}}" 
+			next-margin="{{sideMargin}}"
+		>
+	 		<block wx:for="{{bookList}}" wx:key="index">
+	 			<swiper-item class="swiper-item">
+					 <view 
+						 class="book-container bg-white" 
+						 hover-class="book-container-hover" 
+						 
+					>
+
+	 					<view class="book-image"> 
+	 						<image src="{{item.cover_url}}" mode="scaleToFill"></image>
+	 					</view>
+	 					<view class="book-info">
+	 						<text class="book-name">{{item.name}}</text>
+						 </view>
+						 
+	 				</view>
+	 			</swiper-item>
+			</block>
+		</swiper>
+	</block>
+</view>
+
+

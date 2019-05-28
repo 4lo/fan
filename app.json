@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/test/text",
+    "pages/home/home",
+    "pages/explore/explore",
+    "pages/daily/daily",
+    "pages/result/result"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "FAN",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "backgroundColor": "#f8f8f8"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar": {
+    "color": "#7f8389",
+    "selectedColor": "#00a8f3",
+    "borderStyle": "black",
+    "backgroundColor": "#f7f7fa",
+    "list": [
+      {
+        "pagePath": "pages/daily/daily",
+        "text": "每日推荐",
+        "iconPath": "images/pz.png",
+        "selectedIconPath": "images/logo_mini.png"
+      },
+      {
+        "pagePath": "pages/explore/explore",
+        "text": "开启美食之旅",
+        "iconPath": "images/jd.png",
+        "selectedIconPath": "images/logo_mini.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的",
+        "iconPath": "images/scb.png",
+        "selectedIconPath": "images/logo_mini.png"
+      }
+    ]
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,23 @@
+<view class="page" xmlns:wx="http://www.w3.org/1999/xhtml">
+    <view class="page__hd">
+        <view class="page__title">{{user_name}}</view>
+        <view class="page__desc">{{user_email}}</view>
+    </view>
+    <view class="page__bd">
+        
+        <view class="weui-cells__title">功能</view>
+        <form bindsubmit='add_friend'>
+          <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_input weui-cell_vcode">
+                
+                <view class="weui-cell__bd">
+                    <input name='friend_email' class="weui-input" placeholder="请输入对方邮箱" />
+                </view>
+                <view class="weui-cell__ft">
+                    <button class="weui-vcode-btn" form-type='submit'>添加好友</button>
+                </view>
+            </view>
+          </view>
+        </form>
+    </view>
+</view>
